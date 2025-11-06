@@ -57,11 +57,8 @@ Recommended environment variables (these live in `.env` — exact names are in `
 - JWT_SECRET (secret used to sign JWTs)
 - EMAIL_HOST, EMAIL_PORT, EMAIL_USER, EMAIL_PASS (SMTP for outgoing email)
 
-Note: I used the repository's `.env_template` as the canonical list — open that file to copy exact variable names. If you want, I can paste them here.
 
 ## Database migrations & seeding (Sequelize)
-
-If you have `sequelize-cli` installed globally you can run the migrate/seed commands; otherwise use `npx`:
 
 ```cmd
 npx sequelize-cli db:migrate
@@ -135,10 +132,3 @@ Make sure SMTP settings in `.env` are correct before testing email flows.
 - Seeders: `seeders/`
 - Email templates: `src/services/Mail/`
 
----
-If you want, I can now:
-- Extract and document every route with request/response examples from `src/Routes/apiRoutes.js` and controllers.
-- Add `npm` scripts to `package.json` for migrate/seed/start.
-- Copy exact env variable names from `.env_template` into this README.
-
-Tell me which of those you'd like next and I'll proceed.
